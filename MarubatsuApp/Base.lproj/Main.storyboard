@@ -62,7 +62,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="問題を作成する"/>
                                 <connections>
                                     <action selector="createQuestionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZS-wg-6zv"/>
-                                    <segue destination="fh7-aG-cQO" kind="show" id="XNj-eN-2tv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Question View Controller-->
         <scene sceneID="l4b-NW-GBM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fh7-aG-cQO" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fh7-aG-cQO" customClass="CreateQuestionViewController" customModule="MarubatsuApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zl1-Sv-HAY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
