@@ -96,5 +96,19 @@ class ViewController: UIViewController {
     @IBAction func tappedYesButton(_ sender: UIButton) {
         checkAnswer(yourAnswer: true)
     }
+    
+    
+    @IBAction func createQuestionButtonTapped(_ sender: UIButton) {
+        
+        // 問題作成画面に遷移するコードを追加
+        
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) 
+            let createQuestionViewController = storyboard.instantiateViewController(withIdentifier: "CreateQuestionViewController") // 画面IDは適切に変更してください
+            navigationController?.pushViewController(createQuestionViewController, animated: true)
+        
+    }
+    
+    
+    
 }
 
